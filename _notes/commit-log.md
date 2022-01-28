@@ -45,5 +45,11 @@ all logs after one commit
 
   git log --oneline
 
-  git log --graph --all --oneline --decorate
+  # really useful before rebase a branch
+  git log --graph --all --oneline --decorate        
+```
+
+return commit where topic brach diverges
+```
+  git merge-base master new_feature
 ```
