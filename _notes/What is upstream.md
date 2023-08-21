@@ -1,4 +1,17 @@
-Upstream 分支是远程仓库上由本地仓库中的本地远程分支跟踪的分支
+Upstream 本地分支所对应的远程分支。
+一般，本地分支如果是从clone或者fetch得到的，都在远程库有一个upstream分支。
+
+
+设置upstream的方法有两种：
+1. 在push的时候指定：
+```
+    git push --set-upstream origin my_remote_branch_name
+```
+2. 在新建分支的时候指定：
+```
+    git branch --set-upstream my_local_branch_name origin/my_remote_branch_name
+``````
+
 
 当我们在 Git 中创建一个分支时，我们必须设置一个 Upstream 分支才能正常工作。
 ```
